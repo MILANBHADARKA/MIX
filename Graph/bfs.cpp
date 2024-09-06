@@ -6,14 +6,18 @@ int adj[10][10], n;
 void bfs(int v)
 {
     static int visited[10] = {0};
+
     queue<int> q;
     q.push(v);
     visited[v] = 1;
+
     while (!q.empty())
     {
         v = q.front();
         q.pop();
+
         cout << v << " ";
+        
         for (int i = 0; i < n; i++)
         {
             if (adj[v][i] == 1 && visited[i] == 0)

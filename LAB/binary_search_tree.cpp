@@ -8,6 +8,7 @@ public:
     int data;
     Node *left;
     Node *right;
+
     Node(int val)
     {
         data = val;
@@ -92,6 +93,30 @@ void preorder(Node *root)
     cout << root->data << " ";
     preorder(root->left);
     preorder(root->right);
+}
+
+//inorder traversal
+void inorder(Node *root)
+{
+    if (root == NULL)
+    {
+        return;
+    }
+    inorder(root->left);
+    cout << root->data << " ";
+    inorder(root->right);
+}
+
+//postorder traversal
+void postorder(Node *root)
+{
+    if (root == NULL)
+    {
+        return;
+    }
+    postorder(root->left);
+    postorder(root->right);
+    cout << root->data << " ";
 }
 
 int main()
