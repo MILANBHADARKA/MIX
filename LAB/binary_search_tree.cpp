@@ -131,18 +131,31 @@ int main()
     insert(root, 7);
     insert(root, 6);
     insert(root, 8);
+    insert(root, 2);
+    insert(root, 4);
+    insert(root, 1);
+    insert(root, 9);
+    insert(root, 10);
 
-
+    preorder(root);
     cout << endl;
+
+    postorder(root);
+    cout << endl;
+
+    inorder(root);
+
+    
+
+
     // preorder(root);
 
     // invert(root);
 
-    cout << endl;
 
     // preorder(root);
 
-    findmax(root);
+    // findmax(root);
     
 
     return 0;
