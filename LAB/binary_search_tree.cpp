@@ -43,7 +43,7 @@ Node* insert(Node *root, int val)
     {
         root->right = insert(root->right, val);
     }
-    return root;
+    return root;            
 }
 
 Node* insertuser(Node* root, Node* New){

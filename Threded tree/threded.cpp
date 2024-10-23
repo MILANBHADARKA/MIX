@@ -8,6 +8,7 @@ public:
     Node *left;
     Node *right;
     bool rightThread;
+    
     Node(int data)
     {
         this->data = data;

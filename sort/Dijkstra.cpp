@@ -58,3 +58,25 @@ int main() {
     return 0;
 }
 
+
+
+
+//output
+// Enter number of vertices: 5
+// Enter the adjacency matrix: 0 10 0 5 0
+// 0 0 1 2 0
+// 0 0 0 0 4
+// 0 3 9 0 2
+// 7 0 6 0 0
+// Enter source vertex: 0
+// Shortest distance from source vertex 0 to all other vertices:
+// 0 -> 0 = 0
+// 0 -> 1 = 8
+// 0 -> 2 = 9
+// 0 -> 3 = 5
+// 0 -> 4 = 7
+// Time Complexity: O(V^2) where V is the number of vertices in the graph.
+// Space Complexity: O(V) where V is the number of vertices in the graph.
+
+
+

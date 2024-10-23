@@ -198,10 +198,14 @@ int main() {
     cout << "Enter Expression: ";
     getline(cin, s1);
 
+    string s = infixToPrefix(s1);
+
+    cout << s;
+
     // string prefixExpr = infixToPrefix(s1);
     // cout << "Prefix Expression: " << prefixExpr << endl;
 
-    evaluationPrefix(s1);
+    // evaluationPrefix(s1);
 
     return 0;
 }
